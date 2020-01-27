@@ -65,7 +65,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     //handle push notifications
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler: @escaping (UIBackgroundFetchResult) -> Void)
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+    }
     
 
 
