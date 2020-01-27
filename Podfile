@@ -4,6 +4,7 @@
 target 'Push Demo App' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'AeroGearPush-Swift', :path => '/Users/shadowman/Desktop/aerogear-ios-push'
 
   # Pods for Push Demo App
 
