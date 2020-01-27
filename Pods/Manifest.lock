@@ -1,0 +1,16 @@
+PODS:
+  - AeroGearPush-Swift (3.0.0)
+
+DEPENDENCIES:
+  - AeroGearPush-Swift (~> 3.0.0)
+
+SPEC REPOS:
+  trunk:
+    - AeroGearPush-Swift
+
+SPEC CHECKSUMS:
+  AeroGearPush-Swift: 23708a3f5ba26cd40a67f0322be6f4b4508c0da2
+
+PODFILE CHECKSUM: b1e8f2d8919d744524c0ca6f21cbf0643000f82b
+
+COCOAPODS: 1.8.4
