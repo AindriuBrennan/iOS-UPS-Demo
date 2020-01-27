@@ -2,15 +2,15 @@ PODS:
   - AeroGearPush-Swift (3.0.0)
 
 DEPENDENCIES:
-  - AeroGearPush-Swift (~> 3.0.0)
+  - AeroGearPush-Swift (from `/Users/shadowman/Desktop/aerogear-ios-push`)
 
-SPEC REPOS:
-  trunk:
-    - AeroGearPush-Swift
+EXTERNAL SOURCES:
+  AeroGearPush-Swift:
+    :path: "/Users/shadowman/Desktop/aerogear-ios-push"
 
 SPEC CHECKSUMS:
-  AeroGearPush-Swift: 23708a3f5ba26cd40a67f0322be6f4b4508c0da2
+  AeroGearPush-Swift: e78f8a26d275b1d52d36ef4432d651570dd37b35
 
-PODFILE CHECKSUM: b1e8f2d8919d744524c0ca6f21cbf0643000f82b
+PODFILE CHECKSUM: 7846f941842a188eb5b59d6999da180e04631dd9
 
 COCOAPODS: 1.8.4

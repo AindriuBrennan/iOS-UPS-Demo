@@ -1,6 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
-
+ platform :ios, '9.0'
 
 target 'Push Demo App' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -10,7 +9,7 @@ target 'Push Demo App' do
 
   target 'Push Demo AppTests' do
     inherit! :search_paths
-    pod 'AeroGearPush-Swift', '~> 3.0.0'
+    pod 'AeroGearPush-Swift', :path => '/Users/shadowman/Desktop/aerogear-ios-push'
     # Pods for testing
   end
 
