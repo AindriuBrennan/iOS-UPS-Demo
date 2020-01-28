@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if #available(iOS 13, *) {
+            // do only pure app launch stuff, not interface stuff
+        } else {
+            self.window = UIWindow()
+            
+            let storyboard = UIStoryboard(name: "HomePage", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "HomePage")
+            self.window!.rootViewController = vc
+            self.window!.makeKeyAndVisible()
+        }
         return true
     }
 
