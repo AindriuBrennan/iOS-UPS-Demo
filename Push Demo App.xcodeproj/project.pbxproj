@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A1417B7F23866CC856457A9A /* Pods_Push_Demo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F687A31433AF1CC5A170B911 /* Pods_Push_Demo_AppTests.framework */; };
+		B105524723E0A420009E2BE1 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B105524623E0A41F009E2BE1 /* HomePage.storyboard */; };
+		B105524923E0A4F3009E2BE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B105524823E0A4F3009E2BE1 /* ViewController.swift */; };
 		B177DE1D23DAFC470064567C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177DE1C23DAFC470064567C /* AppDelegate.swift */; };
 		B177DE1F23DAFC470064567C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177DE1E23DAFC470064567C /* SceneDelegate.swift */; };
 		B177DE2123DAFC470064567C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177DE2023DAFC470064567C /* ContentView.swift */; };
@@ -43,6 +45,8 @@
 		7533E2198712A5C5DE97581E /* Pods-Push Demo AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push Demo AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Push Demo AppTests/Pods-Push Demo AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8319EED603648A28CFEC6A40 /* Pods-Push Demo AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Push Demo AppTests.release.xcconfig"; path = "Target Support Files/Pods-Push Demo AppTests/Pods-Push Demo AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		99FFE1F470730B24028FBF5A /* Pods_Push_Demo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Push_Demo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B105524623E0A41F009E2BE1 /* HomePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		B105524823E0A4F3009E2BE1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B177DE1923DAFC470064567C /* Push Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Push Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B177DE1C23DAFC470064567C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B177DE1E23DAFC470064567C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 		B177DE1B23DAFC470064567C /* Push Demo App */ = {
 			isa = PBXGroup;
 			children = (
+				B105524823E0A4F3009E2BE1 /* ViewController.swift */,
+				B105524623E0A41F009E2BE1 /* HomePage.storyboard */,
 				B177DE4C23DB44B10064567C /* Push Demo App.entitlements */,
 				B177DE1C23DAFC470064567C /* AppDelegate.swift */,
 				B177DE1E23DAFC470064567C /* SceneDelegate.swift */,
@@ -288,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B105524723E0A420009E2BE1 /* HomePage.storyboard in Resources */,
 				B177DE2923DAFC480064567C /* LaunchScreen.storyboard in Resources */,
 				B177DE2623DAFC480064567C /* Preview Assets.xcassets in Resources */,
 				B177DE2323DAFC480064567C /* Assets.xcassets in Resources */,
@@ -437,6 +444,7 @@
 			files = (
 				B177DE1D23DAFC470064567C /* AppDelegate.swift in Sources */,
 				B177DE1F23DAFC470064567C /* SceneDelegate.swift in Sources */,
+				B105524923E0A4F3009E2BE1 /* ViewController.swift in Sources */,
 				B177DE2123DAFC470064567C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,7 +617,7 @@
 				DEVELOPMENT_TEAM = GHPBX39444;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Push Demo App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -632,7 +640,7 @@
 				DEVELOPMENT_TEAM = GHPBX39444;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Push Demo App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window : UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
         if #available(iOS 13, *) {
             // do only pure app launch stuff, not interface stuff
@@ -26,6 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window!.rootViewController = vc
             self.window!.makeKeyAndVisible()
         }
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { (granted, error) in
+        })
+        UIApplication.shared.registerForRemoteNotifications()
         return true
     }
 
@@ -49,7 +53,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         
         // setup registration
-        let registration = DeviceRegistration(serverURL: URL(string: "http://localhost:9999/")!)
+        print("Starting registration")
+        let registration = DeviceRegistration(serverURL: URL(string: "http://10.201.82.216:9999/")!)
 
         // attempt to register
         registration.register(
@@ -79,6 +84,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //handle push notifications
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        print("UPS message received: \(userInfo)")
         
     }
     
